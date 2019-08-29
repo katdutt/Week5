@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1> Tasks Table
+    </h1>
+    </br>
+    <h3>Current tasks are as follows:
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Due Date</td>
+                <td>Description</td>
+            </tr>
+            <% for ( var i =0; i< db.length;i++){ %>
+                <tr>
+                    <td>
+                        <%= db[i].taskName %>
+                    </td>
+                    <td>
+                        <%= db[i].taskDueDate %>
+                    </td>
+                    <td>
+                        <%= db[i].taskDescription %>
+                    </td>
+                </tr>
+                <% }%>
+    </h3>
+    Click <a href="/">HERE</a> to return to the homepage
+</body>
+</html>
